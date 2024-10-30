@@ -765,7 +765,7 @@ body {
     -ms-transition: all .3s ease-out 0s;
     -o-transition: all .3s ease-out 0s;
     transition: all .3s ease-out 0s;
-    background-image: url('/img/vibe/vibe-3');
+    background-image: url('img/vibe/vibe-3');
 }
 
 .schedule .single-schedule .inner {

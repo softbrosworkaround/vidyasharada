@@ -354,7 +354,8 @@
                 if (!f.autoWidth && !f.merge) throw "Can not detect maximum absolute position.";
                 for (revert = f.rtl ? 1 : -1, c = this.$stage.width() - this.$element.width();
                     (d = this.coordinates(e)) && !(d * revert >= c);) b = ++e
-            } else b = this._items.length - f.items;
+            }
+        else b = this._items.length - f.items;
         return b
     }, e.prototype.minimum = function(a) {
         return a ? 0 : this._clones.length / 2
@@ -640,7 +641,7 @@ function(a, b, c) {
             l = function(a) {
                 e = '<div class="owl-video-play-icon"></div>', d = k.lazyLoad ? '<div class="owl-video-tn ' + j + '" ' + i + '="' + a + '"></div>' : '<div class="owl-video-tn" style="opacity:1;background-image:url(' + a + ')"></div>', b.after(d), b.after(e)
             };
-        return b.wrap('<div class="owl-video-wrapper"' + g + "></div>"), this._core.settings.lazyLoad && (i = "data-src", j = "owl-lazy"), h.length ? (l(h.attr(i)), h.remove(), !1) : void("youtube" === c.type ? (f = "http://img.youtube.com/vi/" + c.id + "/hqdefault.jpg", l(f)) : "vimeo" === c.type && a.ajax({
+        return b.wrap('<div class="owl-video-wrapper"' + g + "></div>"), this._core.settings.lazyLoad && (i = "data-src", j = "owl-lazy"), h.length ? (l(h.attr(i)), h.remove(), !1) : void("youtube" === c.type ? (f = "http:/img.youtube.com/vi/" + c.id + "/hqdefault.jpg", l(f)) : "vimeo" === c.type && a.ajax({
             type: "GET",
             url: "http://vimeo.com/api/v2/video/" + c.id + ".json",
             jsonp: "callback",
