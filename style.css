@@ -1432,6 +1432,30 @@ body {
     color: #333;
     margin-top: 40px;
 }
+.bottomheaderclass{
+    color:#ffffff;
+    background: #953ab9;
+    padding: 10px;
+}
+.body-text >:nth-child(2){
+    color:#ffffff;
+    background: #953ab9;
+    padding: 10px;
+}
+
+.bottomclass{
+        color:#ffffff;
+        background: #953ab9;
+        padding: 10px;
+    }
+    
+}
+
+.body-text >c{
+    color:#ffffff;
+    background: #953ab9;
+    padding: 10px;
+}
 
 .pf-details .body-text p {
     margin-top: 20px;
