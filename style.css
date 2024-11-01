@@ -1385,9 +1385,18 @@ body {
     border-radius: 8px 8px 0 0;
 }
 
+.pf-details.section h4 {
+    font-size: 18px;
+    line-height: 28px;
+}
+
 @media (min-width: 768px) {
     .owl-controls {
         display: none !important;
+    }
+    .pf-details.section h4 {
+        font-size: 24px;
+        line-height: 28px;
     }
 }
 
@@ -1424,37 +1433,37 @@ body {
     margin-right: 5px;
 }
 
-.pf-details .body-text {}
-
 .pf-details .body-text h3 {
     font-size: 30px;
     font-weight: 600;
     color: #333;
-    margin-top: 40px;
+    margin: 64px 0 36px;
 }
-.bottomheaderclass{
-    color:#ffffff;
-    background: #953ab9;
-    padding: 10px;
-}
-.body-text >:nth-child(2){
-    color:#ffffff;
-    background: #953ab9;
+
+.bottomheaderclass {
+    color: var(--sbprimary);
     padding: 10px;
 }
 
-.bottomclass{
-        color:#ffffff;
-        background: #953ab9;
-        padding: 10px;
-    }
-    
+.body-text>:nth-child(2) {
+    color: #ffffff;
+    background: var(--sbprimary);
+    padding: 10px;
 }
 
-.body-text >c{
-    color:#ffffff;
-    background: #953ab9;
+.bottomclass {
+    color: #ffffff;
+    background: var(--sbprimary);
     padding: 10px;
+    font-size: 24px;
+    margin: 64px 0 34px;
+}
+
+.body-text>c {
+    color: #ffffff;
+    background: var(--sbprimary);
+    padding: 10px;
+    background: url(img/vibe/vide-2.jpeg);
 }
 
 .pf-details .body-text p {
@@ -4725,7 +4734,7 @@ body {
 }
 
 .footer .footer-top {
-    padding: 100px 0px;
+    padding: 36px 0px;
     position: relative;
     background: var(--sbprimary);
 }
@@ -4943,7 +4952,9 @@ body {
 }
 
 .footer .copyright .copyright-content p {
-    color: #fff;
+    color: #d2d2d2;
+    font-size: 12px;
+    font-weight: 300;
 }
 
 .footer .copyright .copyright-content p a {
@@ -4952,6 +4963,13 @@ body {
     text-decoration: underline;
     display: inline-block;
     margin-left: 4px;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    max-width: 1110px;
+    margin: 60px auto;
 }
 
 
