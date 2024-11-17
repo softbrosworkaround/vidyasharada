@@ -17,7 +17,9 @@
     <link rel="icon" href="img/favicon.png">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -63,7 +65,8 @@
                         <!-- Top Contact -->
                         <ul class="top-contact">
                             <li><i class="fa fa-phone"></i>+91 9535197415</li>
-                            <li><i class="fa fa-envelope"></i><a href="mailto:vidyasharada@gamil.com">vidyasharada@gmai.com</a></li>
+                            <li><i class="fa fa-envelope"></i><a
+                                    href="mailto:vidyasharada@gamil.com">vidyasharada@gmai.com</a></li>
                         </ul>
                         <!-- End Top Contact -->
                     </div>
@@ -138,93 +141,142 @@
     </div>
     <!-- End Breadcrumbs -->
 
-    <!-- Start Contact Us -->
-    <section class="contact-us section">
-        <div class="container">
-            <div class="inner">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="contact-us-left">
-                            <!--Start Google-map -->
-                            <div id="myMap"></div>
-                            <!--/End Google-map -->
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="contact-us-form">
-                            <h2>Enquiry</h2>
-                            <h4> 1st PUC ENQUIRY.</h4>
-                            <!-- Form -->
-                            <form class="form" method="post" action="mail/mail.php">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input type="text" name=" Student Name" placeholder="Student Name" required="">
-                                        </div>
+    <!-- PUC Form -->
+    <style>
+        .custom-form {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .custom-form>section {
+            min-width: 600px;
+            max-width: 800px;
+        }
+    </style>
+    <div class="custom-form">
+        <section class="contact-us section" id="neet-form">
+            <div class="container">
+                <div class="inner">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="contact-us-form">
+                                <div class="select-form">
+                                    <div>
+                                        <input type="checkbox" id="check-puc" name="ppuu" checked>
+                                        <label for="ppuu">For PUC</label>
                                     </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input type="text" name=" Father Name" placeholder="father name" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input type="text" name=" Mother Name" placeholder="mother name" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input type="text" name="SSLC School Name" placeholder="school name" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input type="text" name=" Board" placeholder="Board" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input type="text" name=" Address" placeholder="address" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input type="text" name="Phone number" placeholder="Phone" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input type="text" name="Alternative phonenumber" placeholder=" Alternative Phone" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input type="email" name="email" placeholder="Email" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <textarea name="message" placeholder="Your Message" required=""></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group login-btn">
-                                            <button class="btn" type="submit">Send</button>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label class="checkbox-inline" for="2"><input name="news" id="2"
-                                                    type="checkbox">Do you want to subscribe our vidyasharada_academy
-                                                ?</label>
-                                        </div>
+                                    <div>
+                                        <input type="checkbox" id="check-neet" name="nnee">
+                                        <label for="nnee">For NEET</label>
                                     </div>
                                 </div>
-                            </form>
-                            <!--/ End Form -->
+                                <h2>Enquire About PUC Admissions</h2>
+                                <h5 style="margin: 20px 0;">Discover How Our Comprehensive Program Can Boost Your
+                                    Success!</h5>
+                                <strong>All fields required !</strong>
+                                <!-- Form -->
+                                <form class="form" method="post" action="mail/mail.php">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" name=" Student Name" placeholder="Student Name"
+                                                    required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" name=" Father Name" placeholder="father name"
+                                                    required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" name=" Mother Name" placeholder="mother name"
+                                                    required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" name="SSLC School Name" placeholder="school name"
+                                                    required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" name=" Board" placeholder="Board" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" name=" Address" placeholder="address" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" name="Phone number" placeholder="Phone" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" name="Alternative phonenumber"
+                                                    placeholder=" Alternative Phone" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <input type="email" name="email" placeholder="Email" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <textarea name="message" placeholder="Your Message"
+                                                    required=""></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group login-btn">
+                                                <button class="btn" type="submit">Send</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!--/ End Form -->
 
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+        </section>
+        <script>
+            const studentFrom = document.querySelector('.contact-us-form');
+            const checkBoxes = studentFrom.querySelectorAll('.select-form input');
+            const texts = ['Enquire About PUC Admissions', 'Enquire About NEET Long-Term Coaching']
+            checkBoxes.forEach(check => {
+                check.addEventListener('change', () => {
+                    if (checkBoxes[0] == check && checkBoxes[1].checked == true) {
+                        checkBoxes[1].checked = false;
+                        studentFrom.querySelector('h2').textContent = texts[0]
+                    } else {
+                        checkBoxes[0].checked = false;
+                        checkBoxes[1].checked = true;
+                        studentFrom.querySelector('h2').textContent = texts[1]
+
+                    }
+                });
+            });
+            const loc = location.href;
+            console.log(loc);
+            if (loc.includes('neet')) {
+                checkBoxes[0].checked = false;
+                checkBoxes[1].checked = true;
+                studentFrom.querySelector('h2').textContent = texts[1]
+            }
+        </script>
+        <section>
             <div class="contact-info">
                 <div class="row">
                     <!-- single-info -->
@@ -262,13 +314,14 @@
                     <!--/End single-info -->
                 </div>
             </div>
-        </div>
-        <div class="location">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31098.888726523022!2d76.08338517181964!3d13.012662301327184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba548230ba42747%3A0xb0db4fb6b7a1f53f!2sHassan%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1730473232787!5m2!1sen!2sin"
-                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </section>
-    <!--/ End Contact Us -->
+            <div class="location">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31098.888726523022!2d76.08338517181964!3d13.012662301327184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba548230ba42747%3A0xb0db4fb6b7a1f53f!2sHassan%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1730473232787!5m2!1sen!2sin"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </div>
     <!-- Footer Area -->
     ]
     <footer id="footer" class="footer ">
@@ -328,7 +381,8 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-12">
                         <div class="copyright-content">
-                            <p>Copyright©<span id="cpyrytinfr"></span> Vidyasharada academy, All Rights Reserved. Powered by Softbros</p>
+                            <p>Copyright©<span id="cpyrytinfr"></span> Vidyasharada academy, All Rights Reserved.
+                                Powered by Softbros</p>
                         </div>
                     </div>
                 </div>
