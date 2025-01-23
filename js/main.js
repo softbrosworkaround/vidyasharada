@@ -32,11 +32,11 @@ Version:	1.1
 =========================================
 [End Activation Code]
 =========================================*/
-(function($) {
+(function ($) {
     "use strict";
-    $(document).on('ready', function() {
+    $(document).on('ready', function () {
 
-        jQuery(window).on('scroll', function() {
+        jQuery(window).on('scroll', function () {
             if ($(this).scrollTop() > 200) {
                 $('#header .header-inner').addClass("sticky");
             } else {
@@ -45,9 +45,9 @@ Version:	1.1
         });
 
         /*====================================
-        	Sticky Header JS
+            Sticky Header JS
         ======================================*/
-        jQuery(window).on('scroll', function() {
+        jQuery(window).on('scroll', function () {
             if ($(this).scrollTop() > 100) {
                 $('.header').addClass("sticky");
             } else {
@@ -56,14 +56,14 @@ Version:	1.1
         });
 
         /*====================================
-        	Search JS
+            Search JS
         ======================================*/
-        $('.search a').on("click", function() {
+        $('.search a').on("click", function () {
             $('.search-top').toggleClass('active');
         });
 
         /*====================================
-        	Mobile Menu
+            Mobile Menu
         ======================================*/
         $('.menu').slicknav({
             prependTo: ".mobile-nav",
@@ -72,7 +72,7 @@ Version:	1.1
         });
 
         /*===============================
-        	Hero Slider JS
+            Hero Slider JS
         =================================*/
         $(".hero-slider").owlCarousel({
             loop: true,
@@ -88,7 +88,7 @@ Version:	1.1
         });
 
         /*===============================
-        	Testimonial Slider JS
+            Testimonial Slider JS
         =================================*/
         $('.testimonial-slider').owlCarousel({
             items: 3,
@@ -120,7 +120,7 @@ Version:	1.1
         });
 
         /*===============================
-        	Portfolio Slider JS
+            Portfolio Slider JS
         =================================*/
         $('.portfolio-slider').owlCarousel({
             autoplay: true,
@@ -147,7 +147,7 @@ Version:	1.1
             }
         });
         /*===============================
-        	Clients Slider JS
+            Clients Slider JS
         =================================*/
         $('.clients-slider').owlCarousel({
             items: 5,
@@ -176,7 +176,7 @@ Version:	1.1
         });
 
         /*====================================
-        	Single Portfolio Slider JS
+            Single Portfolio Slider JS
         ======================================*/
         $('.pf-details-slider').owlCarousel({
             items: 1,
@@ -192,10 +192,10 @@ Version:	1.1
         });
 
         /*===================
-        	Accordion JS
+            Accordion JS
         =====================*/
         $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
-        $('.accordion a').on('click', function(j) {
+        $('.accordion a').on('click', function (j) {
             var dropDown = $(this).closest('li').find('p');
             $(this).closest('.accordion').find('p').not(dropDown).slideUp(300);
             if ($(this).hasClass('active')) {
@@ -209,9 +209,9 @@ Version:	1.1
         });
 
         /*===============================
-        	Checkbox JS
+            Checkbox JS
         =================================*/
-        $('input[type="checkbox"]').change(function() {
+        $('input[type="checkbox"]').change(function () {
             if ($(this).is(':checked')) {
                 $(this).parent("label").addClass("checked");
             } else {
@@ -220,22 +220,52 @@ Version:	1.1
         });
 
         /*===============================
-        	Right Bar JS
+            Right Bar JS
         =================================*/
-        $('.right-bar .bar').on("click", function() {
+        $('.right-bar .bar').on("click", function () {
             $('.sidebar-menu').addClass('active');
         });
-        $('.sidebar-menu .cross').on("click", function() {
+        $('.sidebar-menu .cross').on("click", function () {
             $('.sidebar-menu').removeClass('active');
         });
     });
 
     /*====================
-    	Preloader JS
+        Preloader JS
     ======================*/
-    $(window).on('load', function() {
+    $(window).on('load', function () {
         $('.preloader').addClass('preloader-deactivate');
     });
 
 
 })(jQuery);
+
+const sections = document.querySelectorAll("section:not(.no-anim)");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+        } else {
+            entry.target.classList.remove("in-view");
+        }
+    });
+});
+
+sections.forEach((section) => observer.observe(section));
+
+// Wa Plugin 
+
+document.body.insertAdjacentHTML('beforeend', '<a class="whatsapp-plug" href="https://wa.me/918147121649"></a>')
+
+document.querySelectorAll('.custom-cards').forEach(card => {
+    card.querySelector('.card-summary a').addEventListener('click', (e) => {
+        e.preventDefault();
+        document.body.style.overflowY = 'hidden';
+        card.querySelector('.hidden-card-body').classList.add('active');
+        card.querySelector('.hidden-card-body span').addEventListener('click', () => {
+            card.querySelector('.hidden-card-body').classList.remove('active');
+            document.body.style.overflowY = 'unset';
+        });
+    });
+})

@@ -222,6 +222,10 @@
         background: #fff
     }
 
+    .split-column {
+        margin: 0 20px;
+    }
+
     .slicknav_menu {
         display: block
     }
@@ -348,7 +352,7 @@
 
     .section-title {
         margin-bottom: 30px;
-        padding: 0 20px
+        padding: 0;
     }
 
     .section-title h2 {
@@ -392,7 +396,7 @@
         top: 0;
         height: 100%;
         width: 100%;
-        background: #fff;
+        background: #0000008a;
         opacity: .5
     }
 
@@ -619,7 +623,6 @@
         top: 0;
         height: 100%;
         width: 100%;
-        background: #fff;
         opacity: .5
     }
 

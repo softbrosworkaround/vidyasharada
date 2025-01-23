@@ -247,7 +247,7 @@ a:hover {
 
 .preloader .loader {
     position: absolute;
-    width: 80px;
+    width: 156px;
     height: 80px;
     border-radius: 50%;
     display: inline-block;
@@ -377,8 +377,8 @@ a:hover {
 
 .btn:hover,
 body .slider .single-slider .btn:hover {
-    color: var(--sbprimary);
-    background-color: #fff
+    color: #fff;
+    border: 2px solid var(--sbprimary);
 }
 
 .section {
@@ -683,7 +683,7 @@ a:hover {
 
     .breadcrumbs+section {
         padding-top: 80px;
-        margin: 80px auto
+        margin: 0 auto;
     }
 }
 

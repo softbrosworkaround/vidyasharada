@@ -950,7 +950,8 @@ pre code {
 
 .btn:focus,
 .btn:hover {
-    text-decoration: none
+    text-decoration: none;
+    color: #fff;
 }
 
 .btn.focus,

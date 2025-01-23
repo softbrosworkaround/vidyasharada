@@ -56,14 +56,14 @@
 
 .slicknav_menu .slicknav_icon-bar {
     display: block;
-    width: 16px;
+    width: 24px;
     height: 4px;
     -webkit-border-radius: 1px;
     -moz-border-radius: 1px;
     border-radius: 1px;
     -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .25);
     -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, .25);
-    box-shadow: 0 1px 0 rgba(0, 0, 0, .25)
+    box-shadow: 0 1px 0 rgb(0 0 0 / 59%);
 }
 
 .slicknav_menu:after,

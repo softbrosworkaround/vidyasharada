@@ -736,7 +736,7 @@ function(a, b, c) {
     }, d.prototype.autoplay = function() {
         this.core.settings.autoplay && !this.core.state.videoPlay ? (b.clearInterval(this.interval), this.interval = b.setInterval(a.proxy(function() {
             this.play()
-        }, this), this.core.settings.autoplayTimeout)) : b.clearInterval(this.interval)
+        }, this), 7000)) : b.clearInterval(this.interval)
     }, d.prototype.play = function() {
         return c.hidden === !0 || this.core.state.isTouch || this.core.state.isScrolling || this.core.state.isSwiping || this.core.state.inMotion ? void 0 : this.core.settings.autoplay === !1 ? void b.clearInterval(this.interval) : void this.core.next(this.core.settings.autoplaySpeed)
     }, d.prototype.stop = function() {
